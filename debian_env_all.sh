@@ -7,7 +7,7 @@ echo "deb http://ftp.debian.org/debian bookworm main non-free-firmware" >> /etc/
 echo "deb https://ftp.debian.org/debian/ bookworm-updates bookworm main" >> /etc/apt/sources.list
 echo "deb https://security.debian.org/debian-security/ bookworm-security bookworm main" >> /etc/apt/sources.list
 apt update && apt upgrade -y
-apt install -y unhide unhide-gui unhide-tcp unattended-upgrades tiger tcpd setools sepol-utils nmap arpwatch mctrans auditd syslog-ng lynis debsecan unzip debian-security-support chkrootkit rkhunter checkpolicy apparmor-profiles apparmor-profiles-extra apticron arpalert debdelta apt-listdifferences apt-listbugs tiger
+apt install -y unhide unhide-gui unhide-tcp unattended-upgrades tiger unzip tcpd setools sepol-utils nmap arpwatch mctrans auditd syslog-ng lynis debsecan unzip debian-security-support chkrootkit rkhunter checkpolicy apparmor-profiles apparmor-profiles-extra apticron arpalert debdelta apt-listdifferences apt-listbugs tiger
 
 wget https://github.com/ovh/debian-cis/archive/refs/heads/master.zip
 unzip master.zip
